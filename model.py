@@ -13,8 +13,15 @@ def build_vocab(text):
     new_text = sorted(set(text))
     return new_text
 
-# Step 2 - build_stoi (not yet solved)
-# TODO: implement
+# Step 2 - build_stoi
+def build_stoi(vocab):
+    """Return a dict mapping each character in vocab to its index."""
+    # TODO: map each character in vocab to its integer position
+    
+    hash= {}
+    for i in range(len(vocab)):
+        hash[vocab[i]]= i 
+    return hash
 
 # Step 3 - build_itos (not yet solved)
 # TODO: implement
