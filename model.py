@@ -23,8 +23,14 @@ def build_stoi(vocab):
         hash[vocab[i]]= i 
     return hash
 
-# Step 3 - build_itos (not yet solved)
-# TODO: implement
+# Step 3 - build_itos
+def build_itos(vocab):
+    itos = {}
+
+    for i in range(len(vocab)):
+        itos[i] = vocab[i]
+
+    return itos
 
 # Step 4 - encode_char (not yet solved)
 # TODO: implement
